@@ -14,6 +14,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Context
+        /*Activity Context: Aktiviteyi ilgilendiren context çeşididir.Activitiy context'e ulaşmak için
+         this ya da MainActivity.this i kullanırız. */
+        /*App Context: App Contexte ulaşmak için getApplicationContext i kullanırız. Bu bir methoddur.
+                       genel app i ilgilendiren durumlarda getApplicationContexti kullanırız.*/
+         //this dediğimizde referans olarak bir üstteki method alınır.
+
+        //getApplicationContext() : Activity context için de app context için de kullanılabilir.
+
+
+
         Toast.makeText(MainActivity.this, "Toast Message", Toast.LENGTH_LONG ).show();
     }
     public void save(View view){
